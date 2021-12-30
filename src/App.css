@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0ca08c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.links {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.home-button {
+  padding: 5px;
+  position: relative;
+  top: 120px;
+  right: 90px;
+  font-weight: 500;
+  color: aliceblue;
+  border: 1px solid #408279;
+  border-radius: 5px;
+  background-color: #0ca08c;
 }
