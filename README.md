@@ -6,7 +6,7 @@ some sample:
 ![this is the home sample](./home.jpg)
 
 
-![this is the home sample](./night.jpg)
+![this is the weather sample](./night.jpg)
 
 
 ## programming language used are 
