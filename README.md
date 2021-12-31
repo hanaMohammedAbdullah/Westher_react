@@ -1,6 +1,6 @@
 # Weather React
 
-in this project is a simple  Dialy Weather Forecast is start with a simple card that requires a cite selection by default it select Erbil  and the other are Kirkuk and Sulaymaniyah after choosing the city then pressing the show me it will chnage the screen to the weather of the city with a simple design that show the weather .
+in this project is a simple  Dialy Weather Forecast is start with a simple card that requires a cite selection by default it select Erbil  and the other are Kirkuk and Sulaymaniyah after choosing the city then pressing the show me it will change the screen to the weather of the city with a simple design that show the weather there is a go back button to go to the previous Home Screen.
 some sample:
 
 ![this is the home sample](./home.jpg)
