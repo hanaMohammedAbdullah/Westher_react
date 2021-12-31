@@ -15,7 +15,7 @@ function Home() {
             name = event.target.value;
           }}
         >
-          <optgroup label="cite">
+          <optgroup label="city">
             <option value="Irbil"> Erbil</option>
             <option value="Kirkuk">Kirkuk</option>
             <option value="Sulaymaniyah">Sulaymaniyah</option>
