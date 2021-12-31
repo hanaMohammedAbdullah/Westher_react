@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  let name;
+  let name = "Hawler";
   let navigate = useNavigate();
   return (
     <div className="selection_card">
@@ -13,12 +13,13 @@ function Home() {
           id="location"
           onChange={(event) => {
             name = event.target.value;
-            console.log(name);
           }}
         >
-          <option value="arbil"> Erbil</option>
-          <option value="Kirkuk">Kirkuk</option>
-          <option value="Sulaymaniyzah">Sulaymaniyah</option>
+          <optgroup label="cite">
+            <option value="Irbil"> Erbil</option>
+            <option value="Kirkuk">Kirkuk</option>
+            <option value="Sulaymaniyah">Sulaymaniyah</option>
+          </optgroup>
         </select>
       </label>
 

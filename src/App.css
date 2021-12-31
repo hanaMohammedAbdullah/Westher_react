@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #0ca08c;
+  background-color: #334756;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,13 +43,88 @@
 }
 
 .home-button {
-  padding: 5px;
+  padding: 15px;
   position: relative;
   top: 120px;
-  right: 90px;
-  font-weight: 500;
-  color: aliceblue;
+  right: 120px;
+  font-size: 15px;
+  color: black;
   border: 1px solid #408279;
   border-radius: 5px;
-  background-color: #0ca08c;
+  background-color: aliceblue;
+}
+
+.selection_card {
+  width: 400px;
+  height: 450px;
+  border: 1px solid #408279;
+  border-radius: 6px;
+  background-color: #082032;
+  margin: auto;
+}
+.isDay {
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  /* background-color: white; */
+  background-image: url("./Assets/day.jpg");
+  color: black;
+  border-radius: 5px;
+}
+.isNight {
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  background-image: url("./Assets/night.jpg");
+  color: black;
+  border-radius: 5px;
+}
+.isDay h3,
+.isNight h3 {
+  position: relative;
+  top: 70px;
+  right: 55px;
+  color: aliceblue;
+}
+.isDay h1,
+.isNight h1 {
+  position: relative;
+  bottom: 50px;
+  right: 45px;
+  color: aliceblue;
+}
+.isDay img,
+.isNight img {
+  position: relative;
+  left: 90px;
+  width: 100px;
+  border: 2px solid #1b1b1b;
+  background-color: aliceblue;
+  border-radius: 70%;
+  display: inline;
+}
+
+label {
+  position: relative;
+  top: 30px;
+  left: 50px;
+  font-weight: 500;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+
+  background-color: #082032;
+  color: aliceblue;
+}
+label select {
+  padding: 5px;
+  background-color: #082032;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.card-button {
+  font-size: 15px;
+  padding: 20px;
+  border: 1px solid #1b1b1b;
+  border-radius: 5px;
 }

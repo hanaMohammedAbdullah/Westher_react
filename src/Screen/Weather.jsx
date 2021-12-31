@@ -4,11 +4,21 @@ const API_KEY = "b24952a3a3ad409097681017212312";
 
 let localcache = {};
 function Weather() {
+  //  this is for change the background of the card depending on the time
+  let time = new Date();
+  let Hours = time.getHours();
+  let isNight = false;
+  if (6 < Hours && Hours < 17) {
+    isNight = false;
+  } else {
+    isNight = true;
+  }
+  // this when the real code start
   let navigate = useNavigate();
   let { name } = useParams();
   const [location, setlocation] = useState(name);
   const [weather, setweather] = useState({
-    city: "arbil",
+    city: "Arbil",
     icon: "//cdn.weatherapi.com/weather/64x64/day/119.png",
     tem: 10,
   });
@@ -19,7 +29,6 @@ function Weather() {
       return;
     }
 
-    console.log(name);
     const respond = await fetch(
       `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`
     );
@@ -37,12 +46,13 @@ function Weather() {
     updateWeather();
   }, [location]);
   return (
-    <div className="Card">
+    <div className={isNight ? "isNight" : "isDay"}>
       <h3>{weather.city}</h3>
       <img src={weather.icon} alt={weather.location} />
-      <h1>{weather.tem}°</h1>
+      <h1>{weather.tem} C°</h1>
 
       <button
+        className="card-button"
         onClick={() => {
           navigate("/");
         }}
