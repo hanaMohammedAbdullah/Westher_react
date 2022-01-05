@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Button } from "antd";
 const API_KEY = "b24952a3a3ad409097681017212312";
 
 let localcache = {};
@@ -50,15 +51,16 @@ function Weather() {
       <h3>{weather.city}</h3>
       <img src={weather.icon} alt={weather.location} />
       <h1>{weather.tem} C°</h1>
-
-      <button
+      <Button
+        type="primary"
         className="card-button"
         onClick={() => {
           navigate("/");
         }}
       >
-        Go Back
-      </button>
+        {" "}
+        Go To home
+      </Button>
     </div>
   );
 }

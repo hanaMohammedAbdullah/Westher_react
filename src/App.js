@@ -1,4 +1,6 @@
 import "./App.css";
+import "antd/dist/antd.css";
+//import "~antd/lib/style/themes/default.less";
 import CustomRouter from "./Router/CustomRouter";
 function App() {
   return (
